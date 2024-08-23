@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css?v=6.4.2"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- auxiliary controls for interacting with the sample -->
+    <link
+      rel="stylesheet"
+      href="https://snippet.dhtmlx.com/codebase/assets/css/auxiliary_controls.css"
+    />
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- component container -->
+    <div style="height: 100vh" id="sidebar">
+      <nav
+        class="dhx_widget dhx_widget--border_right"
+        style="background: #2793e9; color: white"
+      >
+        <ul
+          data-dhx-widget-id="u1724213029018"
+          tabindex="0"
+          class="dhx_navbar dhx_navbar--vertical"
+          style="text-align: center"
+        >
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button"
+              data-dhx-id="dashboard"
+              type="button"
+              style="display: block"
+              aria-disabled="false"
+              aria-label="Dashboard"
+            >
+              <span
+                class="mdi mdi-home dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+              <div class="name">Office 홈</div>
+            </button>
+          </li>
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button"
+              data-dhx-id="statistics"
+              type="button"
+              aria-disabled="false"
+              aria-label="Statistics"
+            >
+              <span
+                class="mdi mdi-clock dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+              <div class="name">결재</div>
+            </button>
+          </li>
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button"
+              data-dhx-id="reports"
+              type="button"
+              aria-disabled="false"
+              aria-label="Reports"
+            >
+              <span
+                class="mdi mdi-calendar dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+              <div class="name">근태</div>
+            </button>
+          </li>
+        
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button dhx_sidebar-button--select"
+              data-dhx-id="posts"
+              type="button"
+              aria-disabled="false"
+              aria-label="Posts"
+              id="posts"
+              aria-haspopup="menu"
+            >
+              <span
+                class="mdi mdi-car dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </li>
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button dhx_sidebar-button--select"
+              data-dhx-id="pages"
+              type="button"
+              aria-disabled="false"
+              aria-label="Pages"
+              id="pages"
+              aria-haspopup="menu"
+            >
+              <span
+                class="mdi mdi-check dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </li>
+          <li class="dhx_sidebar__item" role="none">
+            <button
+              class="dhx_button dhx_sidebar-button"
+              data-dhx-id="messages"
+              type="button"
+              aria-disabled="false"
+              aria-label="Messages"
+            >
+              <span
+                class="mdi mdi-contacts dhx_sidebar-button__icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- dataset -->
+    
+    <script>
+      const sidebar = new dhx.Sidebar("sidebar", {
+        css: "dhx_widget--border_right",
+      });
+
+      sidebar.data.parse(data);
+    </script>
+  </body>
+</html>

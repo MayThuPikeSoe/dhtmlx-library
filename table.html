@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css?v=6.4.2"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- auxiliary controls for interacting with the sample -->
+    <link
+      rel="stylesheet"
+      href="https://snippet.dhtmlx.com/codebase/assets/css/auxiliary_controls.css"
+    />
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- component container -->
+    <div
+      style="height: 100%; width: 100%; border: none"
+      id="grid"
+      class="container"
+    >
+      <div
+        class="dhx_grid dhx_widget"
+        data-dhx-widget-id="u1724226859585"
+        data-dhx-root-id="grid"
+        role="grid"
+        aria-rowcount="8"
+        aria-colcount="6"
+      >
+        <div class="dhx-resize-observer"></div>
+        <div
+          class="dhx_grid-content dhx_grid-less-height"
+          role="presentation"
+          style="width: 100%; height: 100vh"
+        >
+          <div
+            role="presentation"
+            class="dhx_grid-body"
+            style="width: 100%; height: 100vh; border: none"
+          >
+            <div>
+              <div
+                class="dhx_header-wrapper"
+                role="presentation"
+                style="position: sticky; top: 0px"
+              >
+                <div
+                  role="presentation"
+                  class="dhx_grid-header"
+                  style="height: 52px; padding-left: 0px"
+                >
+                  <div
+                    role="rowgroup"
+                    aria-rowcount="1"
+                    class="dhx_header-rows"
+                  >
+                    <div
+                      role="row"
+                      aria-rowindex="1"
+                      class="dhx_header-row"
+                      style="height: 52px"
+                    >
+                      <div
+                        class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left dhx_first-column-cell"
+                        data-dhx-id="project"
+                        data-dhx-text-id="u1724226859586"
+                        aria-colindex="1"
+                        role="columnheader"
+                        aria-sort="none"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <div
+                          role="presentation"
+                          class="dhx_grid-header-cell-text"
+                        >
+                          <input type="checkbox" class="checkbox" />
+                        </div>
+                      </div>
+                      <div
+                        class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                        data-dhx-id="owner"
+                        data-dhx-text-id="u1724226859587"
+                        aria-colindex="2"
+                        role="columnheader"
+                        aria-sort="none"
+                        style="width: 240px; height: 52px; border: none"
+                      >
+                        <div
+                          role="presentation"
+                          class="dhx_grid-header-cell-text"
+                        >
+                          <span
+                            class="dhx_grid-header-cell-text_content"
+                            role="button"
+                            aria-label="Sort by Owner"
+                            >보낸사람
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                        data-dhx-id="renewals"
+                        data-dhx-text-id="u1724226859588"
+                        aria-colindex="3"
+                        role="columnheader"
+                        aria-sort="none"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <div
+                          role="presentation"
+                          class="dhx_grid-header-cell-text"
+                        >
+                          <span
+                            class="dhx_grid-header-cell-text_content"
+                            role="button"
+                            aria-label="Sort by Number of renewals"
+                            >제목</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                        data-dhx-id="paid"
+                        data-dhx-text-id="u1724226859589"
+                        aria-colindex="4"
+                        role="columnheader"
+                        aria-sort="none"
+                        style="
+                          width: 69px;
+                          height: 52px;
+                          border: none;
+                          padding: 0;
+                        "
+                      >
+                        <div
+                          role="presentation"
+                          class="dhx_grid-header-cell-text"
+                        >
+                          <span
+                            class="dhx_grid-header-cell-text_content"
+                            role="button"
+                            aria-label="Sort by Paid"
+                            >일시</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="dhx_header-spans dhx_header-rows"
+                    role="presentation"
+                    style="margin-left: 0px"
+                  >
+                    <div
+                      class="dhx_span-row dhx_header-row"
+                      aria-hidden="true"
+                    ></div>
+                  </div>
+                </div>
+                <div role="presentation"></div>
+              </div>
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+              <!--  -->
+              <div
+                role="presentation"
+                class="dhx_data-wrap"
+                style="padding-left: 0px; padding-top: 0px"
+              >
+                <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                  <div
+                    data-dhx-id="u1724226859592"
+                    class="dhx_grid-row"
+                    role="row"
+                    aria-rowindex="1"
+                    style="height: 52px; border: none"
+                  >
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="project"
+                      role="gridcell"
+                      aria-colindex="1"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 164px; height: 52px; border: none"
+                    >
+                      <input type="checkbox" class="checkbox" name="" id="" />
+
+                      <i
+                        class="fa-regular fa-star"
+                        class="mdi mdi-star"
+                        style="font-size: 20px; padding: 0 10px 0 10px"
+                      ></i>
+                      <span
+                        class="mdi mdi-email"
+                        style="font-size: 20px"
+                      ></span>
+                      <i
+                        class="fa-solid fa-paperclip"
+                        style="margin-left: 40px; font-size: 17px"
+                      ></i>
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="owner"
+                      role="gridcell"
+                      aria-colindex="2"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="
+                        width: 240px;
+                        height: 52px;
+                        border: none;
+                        font-weight: 800;
+                      "
+                    >
+                      postmaster@unipotal.kr
+                    </div>
+                    <div
+                      class="dhx_grid-cell dhx_string-cell"
+                      data-dhx-col-id="renewals"
+                      role="gridcell"
+                      aria-colindex="3"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="width: 836px; height: 52px; border: none"
+                    >
+                      <i class="fa-regular fa-share-from-square"></i>
+                      <p class="line-clamp-1">
+                        협업 처리가 지연되고 있습니다. 주간보고 작성을 처리기한
+                        안에 전달해 주세요. 협업 처리가 지연되고 있습니다.
+                        주간보고 작성을 처리기한 안에 전달해 주세요. 협업 처리가
+                        지연되고 있습니다.
+                      </p>
+                    </div>
+
+                    <div
+                      class="dhx_grid-cell dhx_date-cell"
+                      data-dhx-col-id="start_date"
+                      role="gridcell"
+                      aria-colindex="5"
+                      aria-readonly="false"
+                      tabindex="0"
+                      style="height: 52px; border: none"
+                    >
+                      2024.08.01 13:22
+                    </div>
+                  </div>
+                </div>
+                <div role="presentation" class="dhx_span-spans"></div>
+                <div aria-hidden="true" class="dhx_grid_selection"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dataset -->
+    <script>
+      const data = [
+        {
+          project: "Ticket System",
+          owner: "Martin Thompson",
+          start_date: "06/05/2019",
+          end_date: "03/07/2019",
+          status: "In Progress",
+          hours: 3,
+          cost: 144,
+          budget: 122,
+          balance: -22,
+          paid: true,
+          renewals: "1 time",
+        },
+      ];
+    </script>
+
+    <!-- <script>
+      var toolbar = new dhx.Toolbar("toolbar_container", {
+        css: "dhx_widget--bordered",
+        data: [
+          {
+            id: "customIcon",
+            type: "button",
+            value: `<img src="path/to/custom/icon.svg" alt="Custom Icon" style="height:16px;"/>`,
+          },
+        ],
+      });
+    </script> -->
+    <script src="common.js"></script>
+  </body>
+</html>

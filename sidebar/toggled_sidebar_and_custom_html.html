@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- meta block -->
+    <title>Toggled Sidebar and custom HTML - DHTMLX Sidebar</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../common/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../common/favicon/icon-16.png" sizes="16x16" />
+    <link rel="icon" href="../common/favicon/icon-32.png" sizes="32x32" />
+    <link rel="icon" href="../common/favicon/icon-48.png" sizes="48x48" />
+    <link rel="icon" href="../common/favicon/icon-96.png" sizes="96x96" />
+    <link rel="icon" href="../common/favicon/icon-144.png" sizes="144x144" />
+    <!-- end meta block -->
+    <script
+      type="text/javascript"
+      src="../../codebase/suite.js?v=8.4.1"
+    ></script>
+    <link rel="stylesheet" href="../../codebase/suite.css?v=8.4.1" />
+
+    <link rel="stylesheet" href="../common/index.css?v=8.4.1" />
+    <!-- custom sample head -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css?v=6.4.2"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .dhx_navbar--vertical {
+        overflow: hidden;
+      }
+
+      .user-info_container {
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .user-info_avatar {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+      }
+
+      .user-info_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+      }
+
+      .user-info_contact {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 28px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .dhx_sidebar--minimized .user-info_avatar {
+        height: 30px;
+        width: 30px;
+      }
+
+      .dhx_sidebar--minimized .user-info_title,
+      .dhx_sidebar--minimized .user-info_contact {
+        visibility: hidden;
+      }
+
+      .dhx_sample-container,
+      .dhx_sample-container__widget {
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="dhx_sample-header">
+      <div class="dhx_sample-header__main">
+        <nav class="dhx_sample-header__breadcrumbs">
+          <ul class="dhx_sample-header-breadcrumbs">
+            <li class="dhx_sample-header-breadcrumbs__item">
+              <a
+                href="../index.html"
+                class="dhx_sample-header-breadcrumbs__link"
+                >Back to Suite samples</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <h1 class="dhx_sample-header__title">
+          <div class="dhx_sample-header__content">
+            Toggled Sidebar and custom HTML
+          </div>
+        </h1>
+      </div>
+    </header>
+    <section id="sidebar" style="margin: 20px auto; width: 200px"></section>
+    <script>
+      const data = [
+        {
+          id: "dashboard",
+          value: "Dashboard",
+          icon: "mdi mdi-view-dashboard",
+        },
+        {
+          id: "statistics",
+          value: "Statistics",
+          icon: "mdi mdi-chart-line",
+        },
+        {
+          id: "reports",
+          value: "Reports",
+          icon: "mdi mdi-file-chart",
+        },
+        {
+          type: "separator",
+        },
+        {
+          id: "posts",
+          value: "Posts",
+          icon: "mdi mdi-square-edit-outline",
+          items: [
+            {
+              id: "addPost",
+              value: "New Post",
+              icon: "mdi mdi-plus",
+            },
+            {
+              id: "allPost",
+              value: "Posts",
+              icon: "mdi mdi-view-list",
+            },
+            {
+              id: "categoryPost",
+              value: "Category",
+              icon: "mdi mdi-tag",
+            },
+          ],
+        },
+        {
+          id: "pages",
+          value: "Pages",
+          icon: "mdi mdi-file-outline",
+          items: [
+            {
+              id: "addPage",
+              value: "New Page",
+              icon: "mdi mdi-plus",
+            },
+            {
+              id: "allPage",
+              value: "Pages",
+              icon: "mdi mdi-view-list",
+            },
+            {
+              id: "categoryPages",
+              value: "Category",
+              icon: "mdi mdi-tag",
+            },
+          ],
+        },
+        {
+          id: "messages",
+          value: "Messages",
+          count: 18,
+          icon: "mdi mdi-email-mark-as-unread",
+        },
+        {
+          id: "media",
+          value: "Media",
+          icon: "mdi mdi-folder-multiple-image",
+        },
+        {
+          id: "links",
+          value: "Links",
+          icon: "mdi mdi-link",
+        },
+        {
+          id: "comments",
+          value: "Comments",
+          icon: "mdi mdi-comment-multiple-outline",
+          count: "118",
+          countColor: "primary",
+          items: [
+            {
+              id: "myComments",
+              value: "My Comments",
+              count: 15,
+              icon: "mdi mdi-account",
+            },
+            {
+              id: "allComments",
+              value: "All Comments",
+              count: 103,
+              countColor: "primary",
+              icon: "mdi mdi-comment-multiple-outline",
+            },
+          ],
+        },
+        {
+          type: "spacer",
+        },
+        {
+          id: "notification",
+          value: "Notification",
+          count: 25,
+          icon: "mdi mdi-bell",
+          countColor: "primary",
+        },
+        {
+          id: "configuration",
+          value: "Configuration",
+          icon: "mdi mdi-settings",
+          items: [
+            {
+              id: "myAccount",
+              value: "My Account",
+              icon: "mdi mdi-account-settings",
+            },
+            {
+              id: "general",
+              value: "General Configuration",
+              icon: "mdi mdi-tune",
+            },
+          ],
+        },
+      ];
+      const sidebar = new dhx.Sidebar("sidebar", {
+        css: "dhx_widget--bordered",
+      });
+
+      sidebar.data.load("./common/data.json").then(function () {
+        sidebar.data.add(
+          {
+            id: "toggle",
+            css: "toggle-button",
+            icon: "mdi mdi-backburger",
+          },
+          sidebar.data.getIndex("dashboard")
+        );
+
+        sidebar.data.add(
+          {
+            type: "customHTML",
+            id: "userInfo",
+            css: "user-info_item",
+            html:
+              "<div class='user-info_container'>" +
+              "<img class='user-info_avatar' alt='' src='https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_62.jpg'/>" +
+              "<div class='user-info_title'>" +
+              "Gloria McKinney" +
+              "</div>" +
+              "<div class='user-info_contact'>" +
+              "@gmckinney" +
+              "</div>" +
+              "</div>",
+          },
+          sidebar.data.getIndex("dashboard")
+        );
+      });
+
+      sidebar.events.on("click", function (id) {
+        if (id === "toggle") {
+          const toggleItem = sidebar.data.getItem("toggle");
+          sidebar.toggle();
+
+          if (sidebar.config.collapsed) {
+            toggleItem.icon = "mdi mdi-menu";
+          } else {
+            toggleItem.icon = "mdi mdi-backburger";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

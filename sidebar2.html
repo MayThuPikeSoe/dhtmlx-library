@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../common/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../common/favicon/icon-16.png" sizes="16x16" />
+    <link rel="icon" href="../common/favicon/icon-32.png" sizes="32x32" />
+    <link rel="icon" href="../common/favicon/icon-48.png" sizes="48x48" />
+    <link rel="icon" href="../common/favicon/icon-96.png" sizes="96x96" />
+    <link rel="icon" href="../common/favicon/icon-144.png" sizes="144x144" />
+    <!-- end meta block -->
+    <script
+      type="text/javascript"
+      src="../../codebase/suite.js?v=8.4.1"
+    ></script>
+    <link rel="stylesheet" href="../../codebase/suite.css?v=8.4.1" />
+
+    <link rel="stylesheet" href="../common/index.css?v=8.4.1" />
+    <!-- custom sample head -->
+  </head>
+  <body>
+    <!-- top bar -->
+    <nav
+      class="dhx_widget dhx_toolbar toolbar_template_a dhx_widget--bordered"
+      id="sidebar"
+      style="height: 56px"
+    >
+      <ul
+        data-dhx-widget-id="u1724318706403"
+        tabindex="0"
+        role="toolbar"
+        aria-label="toolbar"
+        class="dhx_navbar dhx_navbar--horizontal"
+      >
+        <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+            data-dhx-id="other"
+            type="button"
+            aria-disabled="false"
+            aria-label="other"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="dots"
+            >
+              <path
+                d="M76,60A16,16,0,1,1,60,44,16,16,0,0,1,76,60Zm52-16a16,16,0,1,0,16,16A16,16,0,0,0,128,44Zm68,32a16,16,0,1,0-16-16A16,16,0,0,0,196,76ZM60,112a16,16,0,1,0,16,16A16,16,0,0,0,60,112Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,128,112Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,196,112ZM60,180a16,16,0,1,0,16,16A16,16,0,0,0,60,180Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,128,180Zm68,0a16,16,0,1,0,16,16A16,16,0,0,0,196,180Z"
+              ></path>
+            </svg>
+          </button>
+        </li>
+        <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+            data-dhx-id="other"
+            type="button"
+            aria-disabled="false"
+            aria-label="other"
+          >
+            <img src="./images/Group.png" alt="" />
+            <span style="color: #2793e9; padding-left: 10px">Office</span>
+          </button>
+        </li>
+
+        <li
+          class="dhx_toolbar__item dhx_toolbar__item--spacer"
+          role="none"
+        ></li>
+
+        <li
+          class="dhx_toolbar__item dhx_toolbar__item--spacer"
+          role="none"
+        ></li>
+
+        <li
+          class="dhx_toolbar__item dhx_toolbar__item--spacer"
+          role="none"
+        ></li>
+        <li class="dhx_toolbar__item" role="none">
+          <div
+            role="presentation"
+            class="dhx_form-group dhx_form-group--no-message-holder dhx_form-group--inline dhx_toolbar__input"
+            style="width: 200px"
+          >
+            <div role="presentation" class="dhx_input__wrapper">
+              <input
+                id="search"
+                placeholder="Search"
+                class="dhx_input dhx_input--icon-padding"
+                autocomplete="off"
+                data-dhx-id="search"
+                aria-label="type text like Search"
+              />
+              <div
+                class="dhx_input__icon mdi mdi-magnify"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </li>
+        <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_toolbar-button-image dhx_toolbar-button-image--icon"
+            data-dhx-id="avatar"
+            type="button"
+            aria-disabled="false"
+          >
+            <span
+              class="dhx_toolbar-button-image__image"
+              role="presentation"
+              style="background-image: url('/images/Ellipse.png')"
+            ></span>
+          </button>
+        </li>
+        <span style="font-size: 16px">이니션</span>
+
+        <!-- <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon dhx_button--count"
+            data-dhx-id="notifications"
+            type="button"
+            aria-disabled="false"
+            aria-label="Notifications"
+          >
+            <span
+              class="dhx_button__icon mdi mdi-bell"
+              aria-hidden="true"
+            ></span>
+
+            <div
+              class="dhx_navbar-count dhx_navbar-count--absolute dhx_navbar-count--color_danger"
+            >
+              7
+            </div>
+          </button>
+        </li> -->
+        <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+            data-dhx-id="setting"
+            type="button"
+            aria-disabled="false"
+            aria-label="Setting"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#202020"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm109.94-52.79a8,8,0,0,0-3.89-5.4l-29.83-17-.12-33.62a8,8,0,0,0-2.83-6.08,111.91,111.91,0,0,0-36.72-20.67,8,8,0,0,0-6.46.59L128,41.85,97.88,25a8,8,0,0,0-6.47-.6A112.1,112.1,0,0,0,54.73,45.15a8,8,0,0,0-2.83,6.07l-.15,33.65-29.83,17a8,8,0,0,0-3.89,5.4,106.47,106.47,0,0,0,0,41.56,8,8,0,0,0,3.89,5.4l29.83,17,.12,33.62a8,8,0,0,0,2.83,6.08,111.91,111.91,0,0,0,36.72,20.67,8,8,0,0,0,6.46-.59L128,214.15,158.12,231a7.91,7.91,0,0,0,3.9,1,8.09,8.09,0,0,0,2.57-.42,112.1,112.1,0,0,0,36.68-20.73,8,8,0,0,0,2.83-6.07l.15-33.65,29.83-17a8,8,0,0,0,3.89-5.4A106.47,106.47,0,0,0,237.94,107.21Zm-15,34.91-28.57,16.25a8,8,0,0,0-3,3c-.58,1-1.19,2.06-1.81,3.06a7.94,7.94,0,0,0-1.22,4.21l-.15,32.25a95.89,95.89,0,0,1-25.37,14.3L134,199.13a8,8,0,0,0-3.91-1h-.19c-1.21,0-2.43,0-3.64,0a8.08,8.08,0,0,0-4.1,1l-28.84,16.1A96,96,0,0,1,67.88,201l-.11-32.2a8,8,0,0,0-1.22-4.22c-.62-1-1.23-2-1.8-3.06a8.09,8.09,0,0,0-3-3.06l-28.6-16.29a90.49,90.49,0,0,1,0-28.26L61.67,97.63a8,8,0,0,0,3-3c.58-1,1.19-2.06,1.81-3.06a7.94,7.94,0,0,0,1.22-4.21l.15-32.25a95.89,95.89,0,0,1,25.37-14.3L122,56.87a8,8,0,0,0,4.1,1c1.21,0,2.43,0,3.64,0a8.08,8.08,0,0,0,4.1-1l28.84-16.1A96,96,0,0,1,188.12,55l.11,32.2a8,8,0,0,0,1.22,4.22c.62,1,1.23,2,1.8,3.06a8.09,8.09,0,0,0,3,3.06l28.6,16.29A90.49,90.49,0,0,1,222.9,142.12Z"
+              ></path>
+            </svg>
+          </button>
+        </li>
+        <li class="dhx_toolbar__item" role="none">
+          <button
+            class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+            data-dhx-id="setting"
+            type="button"
+            aria-disabled="false"
+            aria-label="Setting"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+              ></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <nav
+      class="dhx_widget dhx_sidebar dhx_widget--border_right"
+      style="display: flex; width: 100%; height: 100vh !important"
+    >
+      <!-- component container -->
+      <div style="height: 100vh" id="sidebar">
+        <nav
+          class="dhx_widget dhx_widget--border_right"
+          style="background: #2793e9; color: white; padding-top: 30px"
+        >
+          <ul
+            data-dhx-widget-id="u1724213029018"
+            tabindex="0"
+            class="dhx_navbar dhx_navbar--vertical"
+            style="text-align: center"
+          >
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="dashboard"
+                type="button"
+                style="display: block"
+                aria-disabled="false"
+                aria-label="Dashboard"
+              >
+                <span
+                  class="mdi mdi-home dhx_sidebar-button__icon"
+                  aria-hidden="true"
+                ></span>
+                <div class="name">Office 홈</div>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="statistics"
+                type="button"
+                aria-disabled="false"
+                aria-label="Statistics"
+              >
+                <span
+                  class="mdi mdi-email dhx_sidebar-button__icon"
+                  aria-hidden="true"
+                ></span>
+                <div class="name">결재</div>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="reports"
+                type="button"
+                aria-disabled="false"
+                aria-label="Reports"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M200,32H163.74a47.92,47.92,0,0,0-71.48,0H56A16,16,0,0,0,40,48V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V48A16,16,0,0,0,200,32Zm-72,0a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm32,128H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm0-32H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"
+                  ></path>
+                </svg>
+                <div class="name">근태</div>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="reports"
+                type="button"
+                aria-disabled="false"
+                aria-label="Reports"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM112,184a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm56-8a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136a23.76,23.76,0,0,1-4.84,14.45L152,176ZM48,80V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80Z"
+                  ></path>
+                </svg>
+                <div class="name">근태</div>
+              </button>
+            </li>
+
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button dhx_sidebar-button--select"
+                data-dhx-id="posts"
+                type="button"
+                aria-disabled="false"
+                aria-label="Posts"
+                id="posts"
+                aria-haspopup="menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M61.66,37.66l-32,32A8,8,0,0,1,18.34,58.34l32-32A8,8,0,0,1,61.66,37.66Zm176,20.68-32-32a8,8,0,0,0-11.32,11.32l32,32a8,8,0,0,0,11.32-11.32ZM224,136a96,96,0,1,1-96-96A96.11,96.11,0,0,1,224,136Zm-32,0a8,8,0,0,0-8-8H136V80a8,8,0,0,0-16,0v56a8,8,0,0,0,8,8h56A8,8,0,0,0,192,136Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button dhx_sidebar-button--select"
+                style="
+                  display: flex !important;
+                  justify-content: center;
+                  align-items: center;
+                "
+                data-dhx-id="pages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Pages"
+                id="pages"
+                aria-haspopup="menu"
+              >
+                <div
+                  style="
+                    width: 32px;
+                    height: 32px;
+                    background: #ffffff;
+                    border-radius: 15%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#2793E9"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM117.66,149.66l-32,32a8,8,0,0,1-11.32,0l-16-16a8,8,0,0,1,11.32-11.32L80,164.69l26.34-26.35a8,8,0,0,1,11.32,11.32Zm0-64-32,32a8,8,0,0,1-11.32,0l-16-16A8,8,0,0,1,69.66,90.34L80,100.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM192,168H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm0-64H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="messages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Messages"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM117.66,149.66l-32,32a8,8,0,0,1-11.32,0l-16-16a8,8,0,0,1,11.32-11.32L80,164.69l26.34-26.35a8,8,0,0,1,11.32,11.32Zm0-64-32,32a8,8,0,0,1-11.32,0l-16-16A8,8,0,0,1,69.66,90.34L80,100.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM192,168H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm0-64H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="messages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Messages"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M112,120a16,16,0,1,1-16-16A16,16,0,0,1,112,120ZM232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM135.75,166a39.76,39.76,0,0,0-17.19-23.34,32,32,0,1,0-45.12,0A39.84,39.84,0,0,0,56.25,166a8,8,0,0,0,15.5,4c2.64-10.25,13.06-18,24.25-18s21.62,7.73,24.25,18a8,8,0,1,0,15.5-4ZM200,144a8,8,0,0,0-8-8H152a8,8,0,0,0,0,16h40A8,8,0,0,0,200,144Zm0-32a8,8,0,0,0-8-8H152a8,8,0,0,0,0,16h40A8,8,0,0,0,200,112Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="messages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Messages"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M240,192h-8V56a16,16,0,0,0-16-16H40A16,16,0,0,0,24,56V192H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-24,0H144V176a8,8,0,0,1,8-8h56a8,8,0,0,1,8,8Zm0-48a8,8,0,0,1-16,0V72H56V184a8,8,0,0,1-16,0V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="messages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Messages"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M232,88V200.89A15.13,15.13,0,0,1,216.89,216H40a16,16,0,0,1-16-16V64A16,16,0,0,1,40,48H93.33a16.12,16.12,0,0,1,9.6,3.2L130.67,72H216A16,16,0,0,1,232,88Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li class="dhx_sidebar__item" role="none">
+              <button
+                class="dhx_button dhx_sidebar-button"
+                data-dhx-id="messages"
+                type="button"
+                aria-disabled="false"
+                aria-label="Messages"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#ffffff"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM117.66,149.66l-32,32a8,8,0,0,1-11.32,0l-16-16a8,8,0,0,1,11.32-11.32L80,164.69l26.34-26.35a8,8,0,0,1,11.32,11.32Zm0-64-32,32a8,8,0,0,1-11.32,0l-16-16A8,8,0,0,1,69.66,90.34L80,100.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM192,168H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm0-64H144a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- side bar2 -->
+      <ul
+        data-dhx-widget-id="u1724299814737"
+        tabindex="0"
+        class="dhx_navbar dhx_navbar--vertical;"
+        style="width: 250px; flex-direction: column; margin: 10px"
+      >
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button icon_text"
+            data-dhx-id="dashboard"
+            type="button"
+            aria-disabled="false"
+            aria-label="Dashboard"
+          >
+            <span class="dhx_sidebar-button__text">전자메일</span>
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </li>
+
+        <li class="dhx_sidebar__item" role="none" style="margin-top: 30px">
+          <div style="padding: 40px" id="combobox"></div>
+        </li>
+        <li class="dhx_sidebar__item" role="none">
+          <div class="num_box_list">
+            <div class="num_box">
+              <span>999+</span>
+              <h4>안읽음</h4>
+            </div>
+            <div class="num_box">
+              <span>999+</span>
+              <h4>중요</h4>
+            </div>
+            <div class="num_box">
+              <span>999+</span>
+              <h4>첨부</h4>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="dhx_sidebar__item dhx_sidebar__item--separator"
+          role="separator"
+          aria-orientation="vertical"
+        ></li>
+        <span style="text-align: center"> 기본 메일함 </span>
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button dhx_sidebar-button--select button_group active"
+            data-dhx-id="posts"
+            type="button"
+            aria-disabled="false"
+            aria-label="Posts"
+            id="posts"
+            aria-haspopup="menu"
+          >
+            <div>
+              <!-- <span
+     class="fa-regular fa-envelope dhx_sidebar-button__icon icon"
+     aria-hidden="true"
+   ></span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#2793E9"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
+                ></path>
+              </svg>
+              <span class="dhx_sidebar-button__text">받은메일함</span>
+            </div>
+            <span class="dhx_sidebar-button__caret" aria-hidden="true"
+              >999+</span
+            >
+          </button>
+        </li>
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button dhx_sidebar-button--select button_group"
+            data-dhx-id="posts"
+            type="button"
+            aria-disabled="false"
+            aria-label="Posts"
+            id="posts"
+            aria-haspopup="menu"
+          >
+            <div>
+              <!-- <span
+     class="mdi mdi-send dhx_sidebar-button__icon icon"
+     aria-hidden="true"
+   ></span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#9D9D9D"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M231.87,114l-168-95.89A16,16,0,0,0,40.92,37.34L71.55,128,40.92,218.67A16,16,0,0,0,56,240a16.15,16.15,0,0,0,7.93-2.1l167.92-96.05a16,16,0,0,0,.05-27.89ZM56,224a.56.56,0,0,0,0-.12L85.74,136H144a8,8,0,0,0,0-16H85.74L56.06,32.16A.46.46,0,0,0,56,32l168,95.83Z"
+                ></path>
+              </svg>
+              <span class="dhx_sidebar-button__text">받은메일함</span>
+            </div>
+            <a class="dhx_sidebar-button__caret btn" aria-hidden="true">999+</a>
+          </button>
+        </li>
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button dhx_sidebar-button--select button_group"
+            data-dhx-id="posts"
+            type="button"
+            aria-disabled="false"
+            aria-label="Posts"
+            id="posts"
+            aria-haspopup="menu"
+          >
+            <div>
+              <!-- <span
+     class="mdi mdi-file dhx_sidebar-button__icon icon"
+     aria-hidden="true"
+   ></span
+   > -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#9D9D9D"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                ></path>
+              </svg>
+              <span class="dhx_sidebar-button__text">받은메일함</span>
+            </div>
+            <span class="dhx_sidebar-button__caret" aria-hidden="true">12</span>
+          </button>
+        </li>
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button dhx_sidebar-button--select button_group"
+            data-dhx-id="posts"
+            type="button"
+            aria-disabled="false"
+            aria-label="Posts"
+            id="posts"
+            aria-haspopup="menu"
+          >
+            <div>
+              <!-- <span
+     class="fa-solid fa-ban dhx_sidebar-button__icon icon"
+     aria-hidden="true"
+   ></span
+   > -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#9D9D9D"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.56,87.56,0,0,1-20.41,56.28L71.72,60.4A88,88,0,0,1,216,128ZM40,128A87.56,87.56,0,0,1,60.41,71.72L184.28,195.6A88,88,0,0,1,40,128Z"
+                ></path>
+              </svg>
+              <span class="dhx_sidebar-button__text">받은메일함</span>
+            </div>
+            <span class="dhx_sidebar-button__caret" aria-hidden="true">3</span>
+          </button>
+        </li>
+        <li class="dhx_sidebar__item" role="none">
+          <button
+            class="dhx_button dhx_sidebar-button dhx_sidebar-button--select button_group"
+            data-dhx-id="posts"
+            type="button"
+            aria-disabled="false"
+            aria-label="Posts"
+            id="posts"
+            aria-haspopup="menu"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#9D9D9D"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                ></path>
+              </svg>
+              <span class="dhx_sidebar-button__text">받은메일함</span>
+            </div>
+            <span class="dhx_sidebar-button__caret" aria-hidden="true">20</span>
+          </button>
+        </li>
+        <li
+          class="dhx_sidebar__item dhx_sidebar__item--separator"
+          role="separator"
+          aria-orientation="vertical"
+        ></li>
+
+        <!-- folder -->
+        <section class="dhx_sample-container">
+          <div style="height: 600px; margin-top: 30px" id="tree">
+            <div
+              class="dhx_tree-folder"
+              style="left: 0px; right: 0px; margin-left: 0px"
+            ></div>
+          </div>
+        </section>
+      </ul>
+      <!-- table form -->
+      <div
+        style="
+          height: 100vh;
+          width: 100%;
+          border: none;
+          background: #ebf0f2;
+          padding: 0 40px;
+        "
+        id="grid"
+      >
+        <h1 style="margin: 30px 0; font-weight: bold">
+          받은메일을 확인해 보세요.
+        </h1>
+
+        <div
+          class="dhx_grid dhx_widget"
+          data-dhx-widget-id="u1724226859585"
+          data-dhx-root-id="grid"
+          role="grid"
+          aria-rowcount="8"
+          aria-colcount="6"
+        >
+          <div class="dhx-resize-observer"></div>
+          <div
+            class="dhx_grid-content dhx_grid-less-height"
+            role="presentation"
+            style="width: 100%; height: 100vh"
+          >
+            <div
+              role="presentation"
+              class="dhx_grid-body"
+              style="
+                width: 100%;
+
+                border: none;
+                overflow-y: hidden;
+              "
+            >
+              <div>
+                <div
+                  class="dhx_header-wrapper"
+                  role="presentation"
+                  style="position: sticky; top: 0px"
+                >
+                  <div
+                    role="presentation"
+                    class="dhx_grid-header"
+                    style="height: 52px; padding-left: 0px"
+                  >
+                    <div
+                      role="rowgroup"
+                      aria-rowcount="1"
+                      class="dhx_header-rows"
+                    >
+                      <div
+                        role="row"
+                        aria-rowindex="1"
+                        class="dhx_header-row"
+                        style="height: 52px"
+                      >
+                        <div
+                          class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left dhx_first-column-cell"
+                          data-dhx-id="project"
+                          data-dhx-text-id="u1724226859586"
+                          aria-colindex="1"
+                          role="columnheader"
+                          aria-sort="none"
+                          style="width: 164px; height: 52px; border: none"
+                        >
+                          <div
+                            role="presentation"
+                            class="dhx_grid-header-cell-text"
+                          >
+                            <input type="checkbox" class="checkbox" />
+                          </div>
+                        </div>
+                        <div
+                          class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                          data-dhx-id="owner"
+                          data-dhx-text-id="u1724226859587"
+                          aria-colindex="2"
+                          role="columnheader"
+                          aria-sort="none"
+                          style="width: 240px; height: 52px; border: none"
+                        >
+                          <div
+                            role="presentation"
+                            class="dhx_grid-header-cell-text"
+                          >
+                            <span
+                              class="dhx_grid-header-cell-text_content"
+                              role="button"
+                              aria-label="Sort by Owner"
+                              >보낸사람
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                          data-dhx-id="renewals"
+                          data-dhx-text-id="u1724226859588"
+                          aria-colindex="3"
+                          role="columnheader"
+                          aria-sort="none"
+                          style="width: 836px; height: 52px; border: none"
+                        >
+                          <div
+                            role="presentation"
+                            class="dhx_grid-header-cell-text"
+                          >
+                            <span
+                              class="dhx_grid-header-cell-text_content"
+                              role="button"
+                              aria-label="Sort by Number of renewals"
+                              >제목</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="dhx_grid-header-cell dhx_grid-header-cell--sortable dhx_grid-header-cell--align_left"
+                          data-dhx-id="paid"
+                          data-dhx-text-id="u1724226859589"
+                          aria-colindex="4"
+                          role="columnheader"
+                          aria-sort="none"
+                          style="
+                            width: 69px;
+                            height: 52px;
+                            border: none;
+                            padding: 0;
+                          "
+                        >
+                          <div
+                            role="presentation"
+                            class="dhx_grid-header-cell-text"
+                          >
+                            <span
+                              class="dhx_grid-header-cell-text_content"
+                              role="button"
+                              aria-label="Sort by Paid"
+                              >일시</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="dhx_header-spans dhx_header-rows"
+                      role="presentation"
+                      style="margin-left: 0px"
+                    >
+                      <div
+                        class="dhx_span-row dhx_header-row"
+                        aria-hidden="true"
+                      ></div>
+                    </div>
+                  </div>
+                  <div role="presentation"></div>
+                </div>
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          class="mdi mdi-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          class="mdi mdi-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          class="mdi mdi-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          class="mdi mdi-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+                        <!-- 
+                        <i
+                          class="fa-regular fa-star"
+                          
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+                <!--  -->
+                <div
+                  role="presentation"
+                  class="dhx_data-wrap"
+                  style="padding-left: 0px; padding-top: 0px"
+                >
+                  <div role="rowgroup" aria-rowcount="8" class="dhx_grid_data">
+                    <div
+                      data-dhx-id="u1724226859592"
+                      class="dhx_grid-row"
+                      role="row"
+                      aria-rowindex="1"
+                      style="height: 52px; border: none"
+                    >
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="project"
+                        role="gridcell"
+                        aria-colindex="1"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 164px; height: 52px; border: none"
+                      >
+                        <input type="checkbox" class="checkbox" name="" id="" />
+
+                        <!-- <i
+                          class="fa-regular fa-star"
+                          style="font-size: 20px; padding: 0 10px 0 10px"
+                        ></i> -->
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="#92929D"
+                          viewBox="0 0 256 256"
+                          style="margin: 0 10px"
+                        >
+                          <path
+                            d="M235.36,98.49A12.21,12.21,0,0,0,224.59,90l-61.47-5L139.44,27.67a12.37,12.37,0,0,0-22.88,0L92.88,85,31.41,90a12.45,12.45,0,0,0-7.07,21.84l46.85,40.41L56.87,212.64a12.35,12.35,0,0,0,18.51,13.49L128,193.77l52.62,32.36a12.12,12.12,0,0,0,13.69-.51,12.28,12.28,0,0,0,4.82-13l-14.32-60.42,46.85-40.41A12.29,12.29,0,0,0,235.36,98.49Zm-8.93,7.26-48.68,42a4,4,0,0,0-1.28,3.95l14.87,62.79a4.37,4.37,0,0,1-1.72,4.65,4.24,4.24,0,0,1-4.81.18L130.1,185.67a4,4,0,0,0-4.2,0L71.19,219.32a4.24,4.24,0,0,1-4.81-.18,4.37,4.37,0,0,1-1.72-4.65L79.53,151.7a4,4,0,0,0-1.28-3.95l-48.68-42A4.37,4.37,0,0,1,28.25,101a4.31,4.31,0,0,1,3.81-3L96,92.79a4,4,0,0,0,3.38-2.46L124,30.73a4.35,4.35,0,0,1,8.08,0l24.62,59.6A4,4,0,0,0,160,92.79l63.9,5.15a4.31,4.31,0,0,1,3.81,3A4.37,4.37,0,0,1,226.43,105.75Z"
+                          ></path>
+                        </svg>
+                        <span
+                          class="mdi mdi-email"
+                          style="font-size: 20px"
+                        ></span>
+                        <i
+                          class="fa-solid fa-paperclip"
+                          style="margin-left: 40px; font-size: 17px"
+                        ></i>
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="owner"
+                        role="gridcell"
+                        aria-colindex="2"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="
+                          width: 240px;
+                          height: 52px;
+                          border: none;
+                          font-weight: 800;
+                        "
+                      >
+                        postmaster@unipotal.kr
+                      </div>
+                      <div
+                        class="dhx_grid-cell dhx_string-cell"
+                        data-dhx-col-id="renewals"
+                        role="gridcell"
+                        aria-colindex="3"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="width: 836px; height: 52px; border: none"
+                      >
+                        <i class="fa-regular fa-share-from-square"></i>
+                        <p class="line-clamp-1">
+                          협업 처리가 지연되고 있습니다. 주간보고 작성을
+                          처리기한 안에 전달해 주세요. 협업 처리가 지연되고
+                          있습니다. 주간보고 작성을 처리기한 안에 전달해 주세요.
+                          협업 처리가 지연되고 있습니다.
+                        </p>
+                      </div>
+
+                      <div
+                        class="dhx_grid-cell dhx_date-cell"
+                        data-dhx-col-id="start_date"
+                        role="gridcell"
+                        aria-colindex="5"
+                        aria-readonly="false"
+                        tabindex="0"
+                        style="height: 52px; border: none"
+                      >
+                        2024.08.01 13:22
+                      </div>
+                    </div>
+                  </div>
+                  <div role="presentation" class="dhx_span-spans"></div>
+                  <div aria-hidden="true" class="dhx_grid_selection"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const combobox = new dhx.Combobox("combobox", {
+        placeholder: "메일 작성",
+      });
+      combobox.data.load(
+        "https://snippet.dhtmlx.com/codebase/data/combobox/01/dataset.json"
+      );
+    </script>
+    <script src="/common.js"></script>
+  </body>
+</html>

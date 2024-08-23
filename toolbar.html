@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom DHTMLX Toolbar</title>
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .toolbar-container {
+        background-color: #000;
+        padding: 10px;
+      }
+
+      .dhx_toolbar {
+        background-color: transparent;
+        border: none;
+      }
+
+      .dhx_toolbar-button,
+      .dhx_button,
+      .dhx_input {
+        color: white;
+      }
+
+      .dhx_input input {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .dhx_toolbar-button-image__image {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+      }
+
+      .dhx_navbar-count--color_danger {
+        background-color: #f44336;
+      }
+      .dxi.dxi-format-align-center:before {
+        content: "\f13f";
+        color: gray;
+      }
+      .dxi.dxi-format-align-left:before {
+        content: "\f140";
+        color: gray;
+      }
+      .dxi.dxi-format-align-right:before {
+        content: "\f141";
+        color: gray;
+      }
+      .mdi-bell::before {
+        content: "\F009A";
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar-container">
+      <div id="toolbar">
+        <nav
+          class="dhx_widget dhx_toolbar toolbar_template_a"
+          style="height: 56px"
+        >
+          <ul
+            data-dhx-widget-id="u1724209320547"
+            tabindex="0"
+            role="toolbar"
+            aria-label="toolbar"
+            class="dhx_navbar dhx_navbar--horizontal"
+          >
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                data-dhx-id="other"
+                type="button"
+                aria-disabled="false"
+                aria-label="other"
+              >
+                <span
+                  class="dhx_button__icon mdi mdi-menu"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button"
+                data-dhx-id="add"
+                type="button"
+                aria-disabled="false"
+                aria-label="Add"
+              >
+                <span
+                  class="mdi mdi-plus dhx_toolbar-button__icon"
+                  aria-hidden="true"
+                ></span
+                ><span class="dhx_toolbar-button__text">Add</span>
+              </button>
+            </li>
+            <li
+              class="dhx_toolbar__item dhx_toolbar__item--separator"
+              role="separator"
+              aria-orientation="vertical"
+            ></li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--select"
+                data-dhx-id="language"
+                type="button"
+                aria-disabled="false"
+                aria-label="Language"
+                id="language"
+                aria-haspopup="menu"
+              >
+                <span class="dhx_toolbar-button__text">Language</span
+                ><span
+                  class="dxi dxi-menu-right dhx_toolbar-button__caret"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--select"
+                data-dhx-id="skin"
+                type="button"
+                aria-disabled="false"
+                aria-label="Skin"
+                id="skin"
+                aria-haspopup="menu"
+              >
+                <span class="dhx_toolbar-button__text">Skin</span
+                ><span
+                  class="dxi dxi-menu-right dhx_toolbar-button__caret"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li
+              class="dhx_toolbar__item dhx_toolbar__item--separator"
+              role="separator"
+              aria-orientation="vertical"
+            ></li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--disabled"
+                data-dhx-id="edit"
+                type="button"
+                aria-disabled="true"
+                aria-label="Edit"
+                disabled=""
+              >
+                <span class="dhx_toolbar-button__text">Edit</span>
+              </button>
+            </li>
+            <li
+              class="dhx_toolbar__item dhx_toolbar__item--spacer"
+              role="none"
+            ></li>
+            <li class="dhx_toolbar__item" role="none">
+              <div
+                role="presentation"
+                class="dhx_form-group dhx_form-group--no-message-holder dhx_form-group--inline dhx_toolbar__input"
+                style="width: 200px"
+              >
+                <div role="presentation" class="dhx_input__wrapper">
+                  <input
+                    id="search"
+                    placeholder="Search"
+                    class="dhx_input dhx_input--icon-padding"
+                    autocomplete="off"
+                    data-dhx-id="search"
+                    aria-label="type text like Search"
+                  />
+                  <div
+                    class="dhx_input__icon mdi mdi-magnify"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="dhx_toolbar__item dhx_toolbar__item--spacer"
+              role="none"
+            ></li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--icon"
+                data-dhx-id="left"
+                type="button"
+                aria-disabled="false"
+                aria-label=" "
+                aria-pressed="false"
+              >
+                <span
+                  class="dxi dxi-format-align-left dhx_toolbar-button__icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--active dhx_toolbar-button--icon"
+                data-dhx-id="center"
+                type="button"
+                aria-disabled="false"
+                aria-label=" "
+                aria-pressed="true"
+              >
+                <span
+                  class="dxi dxi-format-align-center dhx_toolbar-button__icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button dhx_toolbar-button--icon"
+                data-dhx-id="right"
+                type="button"
+                aria-disabled="false"
+                aria-label=" "
+                aria-pressed="false"
+              >
+                <span
+                  class="dxi dxi-format-align-right dhx_toolbar-button__icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li
+              class="dhx_toolbar__item dhx_toolbar__item--spacer"
+              role="none"
+            ></li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon dhx_button--count"
+                data-dhx-id="notifications"
+                type="button"
+                aria-disabled="false"
+                aria-label="Notifications"
+              >
+                <span
+                  class="dhx_button__icon mdi mdi-bell"
+                  aria-hidden="true"
+                ></span>
+                <div
+                  class="dhx_navbar-count dhx_navbar-count--absolute dhx_navbar-count--color_danger"
+                >
+                  7
+                </div>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_button--color_secondary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                data-dhx-id="setting"
+                type="button"
+                aria-disabled="false"
+                aria-label="Setting"
+              >
+                <span
+                  class="dhx_button__icon mdi mdi-tune"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </li>
+            <li class="dhx_toolbar__item" role="none">
+              <button
+                class="dhx_button dhx_toolbar-button-image dhx_toolbar-button-image--icon"
+                data-dhx-id="avatar"
+                type="button"
+                aria-disabled="false"
+              >
+                <span
+                  class="dhx_toolbar-button-image__image"
+                  role="presentation"
+                  style="
+                    background-image: url('https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_14.jpg');
+                  "
+                ></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script>
+
+    <!-- <script>
+      const toolbar = new dhx.Toolbar("toolbar", {
+        css: "dhx_toolbar",
+      });
+
+      toolbar.data.add({
+        id: "menu",
+        type: "button",
+        icon: "mdi mdi-menu",
+      });
+
+      toolbar.data.add({
+        id: "add",
+        type: "button",
+        icon: "mdi mdi-plus",
+        value: "Add",
+      });
+
+      toolbar.data.add({
+        type: "separator",
+      });
+
+      toolbar.data.add({
+        id: "language",
+        type: "button",
+        value: "Language",
+        items: [
+          { id: "en", value: "English" },
+          { id: "fr", value: "French" },
+        ],
+      });
+
+      toolbar.data.add({
+        id: "skin",
+        type: "button",
+        value: "Skin",
+        items: [
+          { id: "light", value: "Light" },
+          { id: "dark", value: "Dark" },
+        ],
+      });
+
+      toolbar.data.add({
+        type: "separator",
+      });
+
+      toolbar.data.add({
+        id: "edit",
+        type: "button",
+        value: "Edit",
+        disabled: true,
+      });
+
+      toolbar.data.add({
+        id: "spacer",
+        type: "spacer",
+      });
+
+      toolbar.data.add({
+        id: "search",
+        type: "input",
+        placeholder: "Search",
+      });
+
+      toolbar.data.add({
+        id: "spacer",
+        type: "spacer",
+      });
+
+      toolbar.data.add({
+        id: "align-left",
+        type: "button",
+        icon: "mdi mdi-format-align-left",
+      });
+
+      toolbar.data.add({
+        id: "align-center",
+        type: "button",
+        icon: "mdi mdi-format-align-center",
+        active: true,
+      });
+
+      toolbar.data.add({
+        id: "align-right",
+        type: "button",
+        icon: "mdi mdi-format-align-right",
+      });
+
+      toolbar.data.add({
+        id: "notifications",
+        type: "button",
+        icon: "mdi mdi-bell",
+        bubble: 7,
+      });
+
+      toolbar.data.add({
+        id: "settings",
+        type: "button",
+        icon: "mdi mdi-tune",
+      });
+
+      toolbar.data.add({
+        id: "avatar",
+        type: "button",
+        icon: "mdi mdi-account-circle",
+        template: `<span class="dhx_toolbar-button-image__image" style="background-image: url('https://snippet.dhtmlx.com/codebase/data/common/img/02/avatar_14.jpg');"></span>`,
+      });
+    </script> -->
+  </body>
+</html>

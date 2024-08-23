@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pagination align - DHTMLX Pagination</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+    <script
+      type="text/javascript"
+      src="../../codebase/suite.js?v=8.4.1"
+    ></script>
+    <!-- Include both the CSS and JS files for DHTMLX Suite -->
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+    <script src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script>
+  </head>
+  <body>
+    <div
+      id="second-pagination-holder"
+      style="padding: 20px; margin: 0 auto; max-width: 800px"
+    >
+      <div
+        class="dhx_widget dhx_layout dhx_layout-columns dhx_layout-columns--center dhx_widget--bordered"
+        style="width: 100%; height: 100%; flex: 1 1 auto"
+      >
+        <div
+          aria-label="tab-content-pagination"
+          data-cell-id="pagination"
+          class="dhx_layout-cell"
+          style="flex: 0 0 auto"
+        >
+          <div
+            class="dhx_widget dhx_pagination"
+            data-dhx-widget-id="u1724294664401"
+          >
+            <nav class="dhx_widget dhx_toolbar" style="height: 56px">
+              <ul
+                data-dhx-widget-id="u1724294664402"
+                tabindex="0"
+                role="toolbar"
+                aria-label=""
+                class="dhx_navbar dhx_navbar--horizontal"
+              >
+                <li class="dhx_toolbar__item" role="none">
+                  <button
+                    class="dhx_button dhx_button--color_primary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                    data-dhx-id="first"
+                    type="button"
+                    aria-disabled="false"
+                    aria-label="First"
+                  >
+                    <span
+                      class="dhx_button__icon dxi dxi dxi-chevron-double-left"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </li>
+                <li class="dhx_toolbar__item" role="none">
+                  <button
+                    class="dhx_button dhx_button--color_primary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                    data-dhx-id="previous"
+                    type="button"
+                    aria-disabled="false"
+                    aria-label="Previous"
+                  >
+                    <span
+                      class="dhx_button__icon dxi dxi dxi-chevron-left"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </li>
+                <li
+                  class="dhx_toolbar__item dhx_pagination__count-panel"
+                  role="none"
+                >
+                  <div
+                    role="presentation"
+                    class="dhx_form-group dhx_form-group--no-message-holder dhx_form-group--inline dhx_toolbar__input"
+                    style="width: 40px"
+                  >
+                    <div role="presentation" class="dhx_input__wrapper">
+                      <input
+                        id="count"
+                        class="dhx_input"
+                        autocomplete="off"
+                        data-dhx-id="count"
+                        aria-label="type text"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="dhx_toolbar__item dhx_pagination__count-panel"
+                  role="none"
+                >
+                  <span
+                    class="dhx_navbar-title dhx_navbar-title--toolbar"
+                    data-dhx-id="size"
+                    aria-label="/ 10"
+                    >/ 10</span
+                  >
+                </li>
+                <li class="dhx_toolbar__item" role="none">
+                  <button
+                    class="dhx_button dhx_button--color_primary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                    data-dhx-id="next"
+                    type="button"
+                    aria-disabled="false"
+                    aria-label="Next"
+                  >
+                    <span
+                      class="dhx_button__icon dxi dxi dxi-chevron-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </li>
+                <li class="dhx_toolbar__item" role="none">
+                  <button
+                    class="dhx_button dhx_button--color_primary dhx_button--size_medium dhx_button--view_link dhx_button--circle dhx_button--icon"
+                    data-dhx-id="last"
+                    type="button"
+                    aria-disabled="false"
+                    aria-label="Last"
+                  >
+                    <span
+                      class="dhx_button__icon dxi dxi dxi-chevron-double-right"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const dataset = [];
+      for (let i = 0; i < 100; i++) {
+        dataset.push({
+          value: "Item " + (i + 1),
+        });
+      }
+
+      const dataview = new dhx.DataView(null);
+      dataview.data.parse(dataset);
+
+      // Correct way to initialize Pagination
+      const pagination = new dhx.Pagination("pagination", {
+        css: "dhx_widget--bordered",
+        data: dataview.data, // Connect pagination to the data source
+        pageSize: 10, // Set the number of items per page
+        template: "{current}/{pages}", // Customize the display template
+      });
+
+      // Optionally, you can attach pagination to a layout or directly to a div as shown above
+    </script>
+  </body>
+</html>
