@@ -235,7 +235,6 @@ sidebar.events.on("click", function (id) {
 // folder
 
 const dataset = [
-  
   {
     value: "Books",
     id: "Books",
@@ -337,3 +336,5 @@ const tree = new dhx.Tree("tree", {
 // });
 
 tree.data.parse(dataset);
+
+

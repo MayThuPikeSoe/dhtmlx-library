@@ -122,10 +122,10 @@
 .dhx_navbar--vertical {
   overflow: hidden;
 }
-.dxi.dxi-menu-down{
+.dxi.dxi-menu-down {
   position: relative;
 }
-.dxi.dxi-menu-down::after {
+/* .dxi.dxi-menu-down::after {
   position: absolute;
   content: "";
   top: 0;
@@ -138,7 +138,8 @@
   color: #ffffff;
   background: white;
   background: url(/images/Shape.png) no-repeat;
-}
+} */
+
 .user-info_container {
   padding-top: 8px;
   display: flex;
@@ -315,3 +316,31 @@ button {
   content: "";
   background: url(images/folder.png) no-repeat;
 } */
+
+/* dropdown */
+.dhx_combobox-input__icon {
+  opacity: 0;
+}
+
+/* Add a custom icon (Font Awesome example) */
+.dhx_combobox-input-list-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.dhx_combobox-input-list-wrapper::before {
+  content: "";
+  background: url("images/Shape.png") no-repeat center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  cursor: pointer;
+  color: white !important;
+  transform: translateY(-50%);
+}
+
+.dhx_combobox_opened .dhx_combobox-input-list-wrapper::before {
+  content: "\f0d8"; /* Font Awesome's "up arrow" icon */
+}

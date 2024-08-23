@@ -2153,6 +2153,13 @@
       combobox.data.load(
         "https://snippet.dhtmlx.com/codebase/data/combobox/01/dataset.json"
       );
+      combobox.events.on("open", function () {
+        combobox.getRootView().classList.add("dhx_combobox_opened");
+      });
+
+      combobox.events.on("close", function () {
+        combobox.getRootView().classList.remove("dhx_combobox_opened");
+      });
     </script>
     <script src="/common.js"></script>
   </body>
